@@ -20,33 +20,6 @@
       --md-outline: #79747E;
     }
 
-    @media (prefers-color-scheme: dark) {
-  :root {
-    /* Цвета для темной темы */
-    --md-primary: #D0BCFF;
-    --md-surface: #141218;
-    --md-on-surface: #E6E1E5; /* Светлый текст */
-    --md-on-primary-container: #EADDFF; /* Текст внутри фиолетовой плашки */
-  }
-}
-
-body {
-  margin: 0;
-  font-family: 'Google Sans', 'Roboto', sans-serif;
-  background-color: var(--md-surface);
-  color: var(--md-on-surface); /* ТЕПЕРЬ ОН БУДЕТ МЕНЯТЬСЯ */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin: 0 0 16px 0;
-  /* Используем on-primary-container, чтобы на фиолетовом фоне текст был светлым */
-  color: var(--md-on-primary-container); 
-}
-
     body {
       margin: 0;
       font-family: 'Google Sans', 'Roboto', sans-serif;
