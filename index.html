@@ -22,28 +22,29 @@
 
     @media (prefers-color-scheme: dark) {
   :root {
-    /* M3 Dark Palette - Professional Tones */
-    --md-primary: #D0BCFF;           /* Light lavender */
-    --md-on-primary: #381E72;        /* Deep violet */
-    --md-primary-container: #4F378B; /* Medium violet */
-    --md-on-primary-container: #EADDFF;
-    
-    --md-surface: #1C1B1F;           /* Dark Charcoal (not pure black) */
-    --md-on-surface: #E6E1E5;        /* Soft White */
-    
-    --md-surface-variant: #49454F;   /* Lighter charcoal for cards */
-    --md-on-surface-variant: #CAC4D0;
+    /* Цвета для темной темы */
+    --md-primary: #D0BCFF;
+    --md-surface: #141218;
+    --md-on-surface: #E6E1E5; /* Светлый текст */
+    --md-on-primary-container: #EADDFF; /* Текст внутри фиолетовой плашки */
   }
+}
 
-  body {
-    background-color: var(--md-surface);
-    color: var(--md-on-surface);
-  }
+body {
+  margin: 0;
+  font-family: 'Google Sans', 'Roboto', sans-serif;
+  background-color: var(--md-surface);
+  color: var(--md-on-surface); /* ТЕПЕРЬ ОН БУДЕТ МЕНЯТЬСЯ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  /* Force the hero text to be readable */
-  .hero h1 {
-    color: var(--md-on-primary-container);
-  }
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 16px 0;
+  /* Используем on-primary-container, чтобы на фиолетовом фоне текст был светлым */
+  color: var(--md-on-primary-container); 
 }
 
     body {
