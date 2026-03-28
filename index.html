@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Material Clock</title>
+  <title>MaterialClock</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -22,18 +22,27 @@
 
     @media (prefers-color-scheme: dark) {
   :root {
-    /* Цветовая схема Material 3 Dark */
-    --md-primary: #D0BCFF; /* Более светлый фиолетовый для темного фона */
-    --md-on-primary: #381E72;
-    --md-primary-container: #4F378B;
+    /* M3 Dark Palette - Professional Tones */
+    --md-primary: #D0BCFF;           /* Light lavender */
+    --md-on-primary: #381E72;        /* Deep violet */
+    --md-primary-container: #4F378B; /* Medium violet */
     --md-on-primary-container: #EADDFF;
-    --md-surface: #141218; /* Глубокий темный */
-    --md-surface-variant: #49454F;
-    --md-outline: #938F99;
+    
+    --md-surface: #1C1B1F;           /* Dark Charcoal (not pure black) */
+    --md-on-surface: #E6E1E5;        /* Soft White */
+    
+    --md-surface-variant: #49454F;   /* Lighter charcoal for cards */
+    --md-on-surface-variant: #CAC4D0;
   }
-  
+
   body {
-    color: #E6E1E5; /* Светлый текст для темной темы */
+    background-color: var(--md-surface);
+    color: var(--md-on-surface);
+  }
+
+  /* Force the hero text to be readable */
+  .hero h1 {
+    color: var(--md-on-primary-container);
   }
 }
 
