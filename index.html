@@ -20,6 +20,23 @@
       --md-outline: #79747E;
     }
 
+    @media (prefers-color-scheme: dark) {
+  :root {
+    /* Цветовая схема Material 3 Dark */
+    --md-primary: #D0BCFF; /* Более светлый фиолетовый для темного фона */
+    --md-on-primary: #381E72;
+    --md-primary-container: #4F378B;
+    --md-on-primary-container: #EADDFF;
+    --md-surface: #141218; /* Глубокий темный */
+    --md-surface-variant: #49454F;
+    --md-outline: #938F99;
+  }
+  
+  body {
+    color: #E6E1E5; /* Светлый текст для темной темы */
+  }
+}
+
     body {
       margin: 0;
       font-family: 'Google Sans', 'Roboto', sans-serif;
