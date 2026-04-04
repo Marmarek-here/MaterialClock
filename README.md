@@ -9,4 +9,4 @@ Download the .apk file, install it and you are good to go
 Android. iOS will NOT be supported in the closest time. We may port it to Linux, but unsure for Windows.
 
 ### Which features it has?
-Alarms, clock, timers, basically everything you expecy and need
+Alarms, clock, timers, basically everything you expect and need
